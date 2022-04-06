@@ -1,12 +1,12 @@
 <template>
   <box>
     <div class="columns">
-      <div class="column is-7">{{tarefa.descricao || 'Tarefa sem descrição'}}</div>
+      <div class="column is-8">{{tarefa.descricao || 'Tarefa sem descrição'}}</div>
       <div class="column">
         <cronometro :tempoEmSegundos="tarefa.duracaoEmSegundos" />
       </div>
-      <div class="column">
-          <button @click="excluirTarefa">X</button>
+      <div class="column" align="right">
+          <button class="delete is-medium" style="display:flex" @click="excluirTarefa">X</button>
       </div>
     </div>
   </box>
