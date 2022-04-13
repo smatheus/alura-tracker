@@ -1,6 +1,6 @@
 <template>
   <section>
-    <strong class="display">{{ tempoDecorrido }}</strong>
+    <strong class="display"><i class="fas fa-clock icone"></i>{{ tempoDecorrido }}</strong>
   </section>
 </template>
 
@@ -26,5 +26,9 @@ export default defineComponent({
 <style scoped>
 .display{
   color: var(--texto-primario);
+}
+
+.icone{
+  margin-right: 3px;
 }
 </style>
